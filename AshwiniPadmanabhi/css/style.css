@@ -91,3 +91,15 @@ p{
 #achievements .achv-left, #achievements .achv-right{
   padding: 50px;
 }
+.fa-lg{
+  font-size: 4.5em;
+  color:#333!important;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.fa-lg:hover{
+  color: #313!important;
+}
+#contact .col-md-4,#contact .col-sm-4{
+  padding: 10px 50px;
+}
