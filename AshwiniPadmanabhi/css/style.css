@@ -1,4 +1,12 @@
-.navbar-default{
+
+html{
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+body{
+  margin-top: 70px;
+  }
+.navStyle{
   background-color: #fff!important;
   border: 0!important;
   background: #fff!important;
@@ -6,9 +14,72 @@
 .changeFont{
   font-family: Poppins;
 }
-.navbar-brand{
+.brnd{
   font-size: 20px!important;
   font-weight: bold;
   font-family:Poppins !important;
   color: #000;
+}
+.underline {
+  display: inline;
+  position: relative;
+  overflow: hidden;
+}
+.underline:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: -5px;
+  background: #000;
+  height: 4px;
+  transition-property: left right;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+.underline:hover:after,
+.underline:focus:after,
+.underline:active:after {
+  right: 0;
+}
+
+#top h1{
+  font-size: 50px;
+  margin-bottom: 20px;
+  
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: Poppins!important;
+}
+p{
+  font-family: Roboto!important;
+}
+#top img{
+  width: 80%;
+  margin-left: 60px;
+  border-radius: 50%;
+}
+#top .top-right{
+  margin-top: 90px;
+  padding: 15px;
+}
+#quotes{
+  background: #f1f1f1;
+  padding: 50px 0 30px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+#quotes p{
+  font-family: Josefin Sans;
+  font-size: 25px;
+  padding:5px;
+
+}
+#info .info-right{
+  margin-top: 90px;
+}
+#info .info-left img{
+  width: 100%;
+  margin-top: 20px;
 }

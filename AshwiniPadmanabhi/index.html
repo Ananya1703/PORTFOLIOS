@@ -1,52 +1,107 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>Ashwini</title>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Brand</a>
-    </div>
+  <nav class="navbar navbar-default navbar-fixed-top navStyle">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand brnd" href="#top">Padmanabhi's Corner</a>
+      </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#1">Link1</a></li>
-        <li><a href="#2">Link2</a></li>
-        <li><a href="#3">Link3</a></li>
-        <li><a href="#4">Link4</a></li>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#top" class="changeFont underline">Home</a></li>
+          <li><a href="#info" class="changeFont underline">About</a></li>
+          <li><a href="#achievements" class="changeFont underline">Achievements</a></li>
+          <li><a href="#cv" class="changeFont underline">Resume and more</a></li>
+          <li><a href="#contact" class="changeFont underline">Reach me</a></li>
+
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <section id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <div class="top-left">
+            <img src="images/pic5.jpg">
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="top-right">
+            <h1>
+              Ashwini Padmanabhi
+            </h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="quotes">
+    <div class="container">
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+  </section>
+  <section id="info">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <div class="info-left">
+            <img src="images/bed.jpg">
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="info-right">
+            <h1>Get to know me.</h1>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="cv">
+    <div class="row">
+      <div class="col-sm-6 col-md-6">
         
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-<div id="1" style="min-height:1000px;background-color: black;">
-  
-</div>
-<div id="2" style="min-height:1000px;background-color: yellow;">
-  
-</div>
-<div id="3" style="min-height:1000px;background-color: pink;">
-  
-</div>
-<div id="4" style="min-height:1000px;background-color: red;">
-  
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript">
-  $(document).ready(function(){ $('.nav li a').click(function() { if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) { var $target = $(this.hash); $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']'); if ($target.length) { var targetOffset = $target.offset().top; $('html,body') .animate({scrollTop: targetOffset}, 3000); return false; } } }); });
-</script>
+      </div>
+      <div class="col-md-6 col-sm-6">
+        
+      </div>
+    </div>
+    <div>
+      
+    </div>
+  </section> 
+  <section id="contact">
+
+  </section>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){ $('.nav li a').click(function() { if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) { var $target = $(this.hash); $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']'); if ($target.length) { var targetOffset = $target.offset().top; $('html,body') .animate({scrollTop: targetOffset}, 3000); return false; } } }); });
+  </script>
 </body>
 </html>
