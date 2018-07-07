@@ -83,3 +83,11 @@ p{
   width: 100%;
   margin-top: 20px;
 }
+#achievements{
+  margin-top: 20px;
+  border: 1px solid #f1f1f1;
+  background: #f1f1f1;
+}
+#achievements .achv-left, #achievements .achv-right{
+  padding: 50px;
+}
