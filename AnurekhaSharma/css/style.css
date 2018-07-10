@@ -1,0 +1,145 @@
+
+html{
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+body{
+  margin-top: 70px;
+  }
+.navStyle{
+  background-color: #fff!important;
+  border: 0!important;
+  background: #fff!important;
+}
+.changeFont{
+  font-family: Poppins;
+}
+.brnd{
+  font-size: 20px!important;
+  font-weight: bold;
+  font-family:Poppins !important;
+  color: #000;
+}
+.underline {
+  display: inline;
+  position: relative;
+  overflow: hidden;
+}
+.underline:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: -5px;
+  background: #000;
+  height: 4px;
+  transition-property: left right;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+.underline:hover:after,
+.underline:focus:after,
+.underline:active:after {
+  right: 0;
+}
+
+#top h1{
+  font-size: 50px;
+  margin-bottom: 20px;
+  
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: Poppins!important;
+}
+p{
+  font-family: Roboto!important;
+}
+#top img{
+  width: 80%;
+  margin-left: 60px;
+  border-radius: 50%;
+}
+#top .top-right{
+  margin-top: 90px;
+  padding: 15px;
+}
+#quotes{
+  background: #f1f1f1;
+  padding: 20px 0 30px 0;
+  text-align: center;
+  margin-top: 20px;
+
+}
+.nav li a:hover{
+text-decoration: underline;
+}
+#quotes p{
+  font-family: Josefin Sans;
+  font-size: 20px;
+  padding:5px;
+
+}
+#info .info-right{
+  margin-top: 90px;
+}
+#info .info-left img{
+  width: 100%;
+  margin-top: 20px;
+}
+#achievements{
+  margin-top: 20px;
+  border: 1px solid #f1f1f1;
+  background: #f1f1f1;
+}
+#achievements .achv-left, #achievements .achv-right{
+  padding: 80px;
+}
+.fa-lg{
+  font-size: 4.5em;
+  color:#333!important;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.fa-lg:hover{
+  color: #313!important;
+}
+#contact .col-md-3,#contact .col-sm-3{
+  padding: 10px 100px;
+}
+#contact{
+  /*border-top:1px #f1f1f1 solid;*/
+  padding: 20px;
+}
+footer{
+  margin-top: 40px;
+ /* background: #333!important;
+  padding: 20px;
+  margin-bottom:-10px; 
+  bottom: 0px;*/
+}
+.foots{
+  float: right;
+  color: #333;
+  font-family: Poppins!important;
+}
+#cv .cv-left, #cv .cv-center,#cv .cv-right{
+  text-align: center;
+}
+#cv{
+  margin-top: 1px;
+  margin-bottom: 20px;
+  padding: 50px;
+  cursor: pointer;
+  /*background-color: #f1f1f1;*/
+}
+#cv .cv-center{
+  margin-top: 20px;
+}
+.fa-download{
+  cursor: pointer;
+}
+#cv .cv-left:hover,#cv .cv-right:hover{
+  color:#313;
+  text-decoration: underline;
+}
