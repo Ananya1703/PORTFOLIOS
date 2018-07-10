@@ -10,9 +10,10 @@
 		<meta name="author" content="Codrops" />
 		<link rel="shortcut icon" href="favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<!--[if IE]>
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -24,16 +25,34 @@
 				<span class="link-copy"></span>
 				<nav class="menu menu--viola">
 					<ul class="menu__list">
-						<li class="menu__item menu__item--current"><a href="#" class="menu__link">About Me</a></li>
-						<li class="menu__item active"><a href="#" class="menu__link">Publications</a></li>
+						<li class="menu__item menu__item--current aboutMe"><a href="#" class="menu__link">About Me</a></li>
+						<li class="menu__item active publications"><a href="#" class="menu__link">Publications</a></li>
 						<li class="menu__item"><a href="#" class="menu__link">Research Work</a></li>
 						<li class="menu__item"><a href="#" class="menu__link">Resume</a></li>
 						<li class="menu__item" data-target="#myModal"><a href="#" class="menu__link">Contact</a></li>
 					</ul>
 				</nav>
 			</section>
-			
 		</div>
+		<section id="hi">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <div class="top-left">
+            <img src="images/pic5.jpg">
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="top-right">
+            <h1>
+              Ashwini Padmanabhi
+            </h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 		<!-- /container -->
 		<script src="js/classie.js"></script>
 		<script src="js/clipboard.min.js"></script>
@@ -73,7 +92,69 @@
 			});
 		})(window);
 		</script> -->
+		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 		<script src="js/style.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script src="js/controls.js"></script>
+		<script>
+    window.sr = ScrollReveal();
+    sr.reveal('.section__title',{
+      duration: 2000,
+      origin:'bottom'
+    });
+    sr.reveal('.menu__list',{
+      duration:3000,
+      origin:'right',
+      distance:'300px'
+    });
+    sr.reveal('.top-right',{
+      duration:2000,
+      origin:'right',
+      distance:'300px'
+    });
+    sr.reveal('#quotes div',{
+      duration:2000,
+      origin:'bottom'
+    });
+    sr.reveal('.info-left',{
+      duration:2000,
+      origin:'left',
+      distance:'300px',
+      viewFactor:0.2
+    });
+    sr.reveal('.info-right',{
+      duration:2000,
+      origin:'right',
+      distance:'300px',
+      viewFactor:0.2
+
+    });
+     sr.reveal('.achv-left',{
+      duration:2000,
+      origin:'left',
+      distance:'300px',
+      viewFactor:0.2
+    });
+    sr.reveal('.achv-right',{
+      duration:2000,
+      origin:'right',
+      distance:'300px',
+      viewFactor:0.2
+
+    });
+    sr.reveal('.cv-left',{
+      duration:2000,
+      origin:'left',
+      distance:'300px',
+      viewFactor:0.2
+    });
+    sr.reveal('.cv-right',{
+      duration:2000,
+      origin:'right',
+      distance:'300px',
+      viewFactor:0.2
+
+    });
+  </script>
 	</body>
 </html>
