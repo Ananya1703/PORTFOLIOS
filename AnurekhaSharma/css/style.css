@@ -54,15 +54,20 @@ a:focus {
 	height: 0;
 	pointer-events: none;
 }
-
-.info {
+.top-right{
+	padding: 0px 50px;
+}
+/*.info {
 	font-size: 0.85em;
 	font-weight: bold;
 	line-height: 36px;
 	margin: 5em 0 0;
 	color: #9c9898;
 }
-
+*/
+#info{
+	min-height: 60vh;
+}
 .link-copy {
 	position: absolute;
 	top: 2em;
@@ -208,6 +213,21 @@ a:focus {
 p{
 	color: #d1d1d1;
 }
+.top-left{
+	padding: 0 40px;
+}
+.top-left img{
+	width: 90%;
+}
+.info-bottom p{
+	padding: 0 44px;
+	text-align: justify;
+}
+.top-right{
+	padding: 0 50px;
+	text-align: justify;
+}
+
 .break {
 	padding: 3em 0;
 	text-align: center;

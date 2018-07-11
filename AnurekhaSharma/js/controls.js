@@ -1,12 +1,15 @@
 $(document).ready(function(){
     $("#hi").hide();
+    $("#publications").hide();
     //alert(9)
 });
 $(".publications").click(function(){
 	//alert(9090)
-    $("#hi").show();
+    $("#info").hide();
+    $("#publications").show();
 });
 
-$(".aboutMe").click(function(){
-	 $("#hi").hide();
+$(".info").click(function(){
+	 $("#info").show();
+	 $("#publications").hide();
 });
