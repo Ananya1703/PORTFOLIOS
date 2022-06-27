@@ -19,6 +19,11 @@
 	display: table;
 }
 
+footer{
+	margin-top: 15vh;
+	text-align: center;
+}
+
 .clearfix:after {
 	clear: both;
 }
